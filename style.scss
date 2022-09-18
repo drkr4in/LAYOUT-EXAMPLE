@@ -258,7 +258,7 @@ $valueOfHeight: 40px;
       }
       .right {
         width: 759px;
-        height: 1400px;
+        height: 1500px;
         background-color: white;
         .right-content {
           margin: 100px 70px;
@@ -364,9 +364,9 @@ $valueOfHeight: 40px;
           }
           .right-content-radios {
             display: flex;
-            justify-content: start;
+            flex-direction: column;
             flex-wrap: wrap;
-            gap: 80px;
+            gap: 90px;
             $radioSize: 22px;
             $radioBorder: #d1d7e3;
             $radioActive: #5d9bfb;

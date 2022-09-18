@@ -229,7 +229,7 @@
   }
   body .main .right {
     width: 759px;
-    height: 1400px;
+    height: 1500px;
     background-color: white;
   }
   body .main .right .right-content {
@@ -336,9 +336,9 @@
   }
   body .main .right .right-content .right-content-radios {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 90px;
   }
   body .main .right .right-content .right-content-radios .radio {
     display: block;

@@ -1,0 +1,464 @@
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #2a4a5c;
+}
+$valueOfWidth: 250px;
+$valueOfHeight: 40px;
+@media screen and (min-width: 700px) {
+  body {
+    background-color: #eff6ff;
+    .main {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .left {
+        .bg {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+
+        .logo {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+        }
+      }
+      .right {
+        width: 759px;
+        height: 1000px;
+        background-color: white;
+        .right-content {
+          margin: 100px 70px;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          gap: 70px;
+          .right-content-firstText {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex-wrap: wrap;
+            h1 {
+              font-size: 27px;
+            }
+            p {
+              font-size: 18px;
+              color: #7b8a92;
+            }
+          }
+          .right-content-registration {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 60px;
+            .btns {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 30px;
+              .fb {
+                background-color: #255a9b;
+                width: $valueOfWidth;
+                height: $valueOfHeight;
+                border-radius: 5px;
+                border: none;
+                display: flex;
+                .facebook {
+                  width: 8%;
+                  height: auto;
+                  margin: auto;
+                }
+              }
+              .lk {
+                background-color: #0076b6;
+                width: $valueOfWidth;
+                height: $valueOfHeight;
+                border: none;
+                border-radius: 5px;
+                display: flex;
+                .linkedin {
+                  width: 8%;
+                  height: auto;
+                  margin: auto;
+                }
+              }
+              .R {
+                margin: auto;
+                color: #ffffff;
+              }
+            }
+            .hr {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .forms {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 30px;
+              .email {
+                font-size: 20px;
+                width: $valueOfWidth;
+                height: $valueOfHeight;
+                text-align: center;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                border-left: 1px solid #5d9bfb;
+                border-radius: 5px;
+              }
+
+              .number {
+                font-size: 20px;
+                width: $valueOfWidth;
+                height: $valueOfHeight;
+                text-align: center;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                border-left: 1px solid #5d9bfb;
+                border-radius: 5px;
+              }
+            }
+          }
+          .right-content-secondText {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex-wrap: wrap;
+            h2 {
+              font-size: 22px;
+            }
+            p {
+              font-size: 15px;
+              color: #7b8a92;
+            }
+          }
+          .right-content-radios {
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+            gap: 80px;
+            $radioSize: 22px;
+            $radioBorder: #d1d7e3;
+            $radioActive: #5d9bfb;
+
+            .radio {
+              display: block;
+              cursor: pointer;
+              input {
+                display: none;
+                & + span {
+                  line-height: $radioSize;
+                  height: $radioSize;
+                  padding-left: $radioSize;
+                  display: block;
+                  position: relative;
+                  &:not(:empty) {
+                    padding-left: $radioSize + 8;
+                  }
+                  &:before,
+                  &:after {
+                    content: "";
+                    width: $radioSize;
+                    height: $radioSize;
+                    display: block;
+                    border-radius: 50%;
+                    left: 0;
+                    top: 0;
+                    position: absolute;
+                  }
+                  &:before {
+                    background: $radioBorder;
+                    transition: background 0.2s ease,
+                      transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+                  }
+                  &:after {
+                    background: #fff;
+                    transform: scale(0.78);
+                    transition: transform 0.6s
+                      cubic-bezier(0.175, 0.885, 0.32, 1.4);
+                  }
+                }
+                &:checked + span {
+                  &:before {
+                    transform: scale(1.04);
+                    background: $radioActive;
+                  }
+                  &:after {
+                    transform: scale(0.4);
+                    transition: transform 0.3s ease;
+                  }
+                }
+              }
+              &:hover {
+                input {
+                  & + span {
+                    &:before {
+                      transform: scale(0.92);
+                    }
+                    &:after {
+                      transform: scale(0.74);
+                    }
+                  }
+                  &:checked + span {
+                    &:after {
+                      transform: scale(0.4);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .right-content-checkbox {
+            span {
+              color: #7b8a92;
+            }
+            a {
+              color: #3698fb;
+            }
+          }
+          .right-content-buttonCreate {
+            .create {
+              background-color: #3698fb;
+              height: $valueOfHeight;
+              width: $valueOfWidth;
+              border: none;
+              color: #ffffff;
+              border-radius: 5px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 699px) {
+  body {
+    background-color: #eff6ff;
+    .main {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .left {
+        .bg {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+
+        .logo {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+        }
+      }
+      .right {
+        width: 759px;
+        height: 1400px;
+        background-color: white;
+        .right-content {
+          margin: 100px 70px;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          gap: 60px;
+          .right-content-firstText {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex-wrap: wrap;
+            h1 {
+              font-size: 27px;
+            }
+            p {
+              font-size: 18px;
+              color: #7b8a92;
+            }
+          }
+          .right-content-registration {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 60px;
+            .btns {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 30px;
+              .fb {
+                background-color: #255a9b;
+                width: $valueOfWidth;
+                height: $valueOfHeight;
+                border-radius: 5px;
+                border: none;
+                display: flex;
+                .facebook {
+                  width: 8%;
+                  height: auto;
+                  margin: auto;
+                }
+              }
+              .lk {
+                background-color: #0076b6;
+                width: $valueOfWidth;
+                height: $valueOfHeight;
+                border: none;
+                border-radius: 5px;
+                display: flex;
+                .linkedin {
+                  width: 8%;
+                  height: auto;
+                  margin: auto;
+                }
+              }
+              .R {
+                margin: auto;
+                color: #ffffff;
+              }
+            }
+            .hr {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .forms {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 30px;
+              .email {
+                font-size: 20px;
+                width: $valueOfWidth;
+                height: $valueOfHeight;
+                text-align: center;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                border-left: 1px solid #5d9bfb;
+                border-radius: 5px;
+              }
+
+              .number {
+                font-size: 20px;
+                width: $valueOfWidth;
+                height: $valueOfHeight;
+                text-align: center;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                border-left: 1px solid #5d9bfb;
+                border-radius: 5px;
+              }
+            }
+          }
+          .right-content-secondText {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex-wrap: wrap;
+            h2 {
+              font-size: 22px;
+            }
+            p {
+              font-size: 15px;
+              color: #7b8a92;
+            }
+          }
+          .right-content-radios {
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+            gap: 80px;
+            $radioSize: 22px;
+            $radioBorder: #d1d7e3;
+            $radioActive: #5d9bfb;
+
+            .radio {
+              display: block;
+              cursor: pointer;
+              input {
+                display: none;
+                & + span {
+                  line-height: $radioSize;
+                  height: $radioSize;
+                  padding-left: $radioSize;
+                  display: block;
+                  position: relative;
+                  &:not(:empty) {
+                    padding-left: $radioSize + 8;
+                  }
+                  &:before,
+                  &:after {
+                    content: "";
+                    width: $radioSize;
+                    height: $radioSize;
+                    display: block;
+                    border-radius: 50%;
+                    left: 0;
+                    top: 0;
+                    position: absolute;
+                  }
+                  &:before {
+                    background: $radioBorder;
+                    transition: background 0.2s ease,
+                      transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+                  }
+                  &:after {
+                    background: #fff;
+                    transform: scale(0.78);
+                    transition: transform 0.6s
+                      cubic-bezier(0.175, 0.885, 0.32, 1.4);
+                  }
+                }
+                &:checked + span {
+                  &:before {
+                    transform: scale(1.04);
+                    background: $radioActive;
+                  }
+                  &:after {
+                    transform: scale(0.4);
+                    transition: transform 0.3s ease;
+                  }
+                }
+              }
+              &:hover {
+                input {
+                  & + span {
+                    &:before {
+                      transform: scale(0.92);
+                    }
+                    &:after {
+                      transform: scale(0.74);
+                    }
+                  }
+                  &:checked + span {
+                    &:after {
+                      transform: scale(0.4);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .right-content-checkbox {
+            span {
+              color: #7b8a92;
+            }
+            a {
+              color: #3698fb;
+            }
+          }
+          .right-content-buttonCreate {
+            .create {
+              background-color: #3698fb;
+              height: $valueOfHeight;
+              width: $valueOfWidth;
+              border: none;
+              color: #ffffff;
+              border-radius: 5px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

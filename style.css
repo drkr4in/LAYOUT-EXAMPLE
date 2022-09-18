@@ -1,0 +1,413 @@
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #2a4a5c;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background-color: #eff6ff;
+  }
+  body .main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body .main .left .bg {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  body .main .left .logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+  }
+  body .main .right {
+    width: 759px;
+    height: 1000px;
+    background-color: white;
+  }
+  body .main .right .right-content {
+    margin: 100px 70px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 70px;
+  }
+  body .main .right .right-content .right-content-firstText {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  body .main .right .right-content .right-content-firstText h1 {
+    font-size: 27px;
+  }
+  body .main .right .right-content .right-content-firstText p {
+    font-size: 18px;
+    color: #7b8a92;
+  }
+  body .main .right .right-content .right-content-registration {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  body .main .right .right-content .right-content-registration .btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  body .main .right .right-content .right-content-registration .btns .fb {
+    background-color: #255a9b;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+  }
+  body .main .right .right-content .right-content-registration .btns .fb .facebook {
+    width: 8%;
+    height: auto;
+    margin: auto;
+  }
+  body .main .right .right-content .right-content-registration .btns .lk {
+    background-color: #0076b6;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+  }
+  body .main .right .right-content .right-content-registration .btns .lk .linkedin {
+    width: 8%;
+    height: auto;
+    margin: auto;
+  }
+  body .main .right .right-content .right-content-registration .btns .R {
+    margin: auto;
+    color: #ffffff;
+  }
+  body .main .right .right-content .right-content-registration .hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main .right .right-content .right-content-registration .forms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  body .main .right .right-content .right-content-registration .forms .email {
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid #5d9bfb;
+    border-radius: 5px;
+  }
+  body .main .right .right-content .right-content-registration .forms .number {
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid #5d9bfb;
+    border-radius: 5px;
+  }
+  body .main .right .right-content .right-content-secondText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  body .main .right .right-content .right-content-secondText h2 {
+    font-size: 22px;
+  }
+  body .main .right .right-content .right-content-secondText p {
+    font-size: 15px;
+    color: #7b8a92;
+  }
+  body .main .right .right-content .right-content-radios {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+  body .main .right .right-content .right-content-radios .radio {
+    display: block;
+    cursor: pointer;
+  }
+  body .main .right .right-content .right-content-radios .radio input {
+    display: none;
+  }
+  body .main .right .right-content .right-content-radios .radio input + span {
+    line-height: 22px;
+    height: 22px;
+    padding-left: 22px;
+    display: block;
+    position: relative;
+  }
+  body .main .right .right-content .right-content-radios .radio input + span:not(:empty) {
+    padding-left: 30px;
+  }
+  body .main .right .right-content .right-content-radios .radio input + span:before, body .main .right .right-content .right-content-radios .radio input + span:after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  body .main .right .right-content .right-content-radios .radio input + span:before {
+    background: #d1d7e3;
+    transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+  }
+  body .main .right .right-content .right-content-radios .radio input + span:after {
+    background: #fff;
+    transform: scale(0.78);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+  }
+  body .main .right .right-content .right-content-radios .radio input:checked + span:before {
+    transform: scale(1.04);
+    background: #5d9bfb;
+  }
+  body .main .right .right-content .right-content-radios .radio input:checked + span:after {
+    transform: scale(0.4);
+    transition: transform 0.3s ease;
+  }
+  body .main .right .right-content .right-content-radios .radio:hover input + span:before {
+    transform: scale(0.92);
+  }
+  body .main .right .right-content .right-content-radios .radio:hover input + span:after {
+    transform: scale(0.74);
+  }
+  body .main .right .right-content .right-content-radios .radio:hover input:checked + span:after {
+    transform: scale(0.4);
+  }
+  body .main .right .right-content .right-content-checkbox span {
+    color: #7b8a92;
+  }
+  body .main .right .right-content .right-content-checkbox a {
+    color: #3698fb;
+  }
+  body .main .right .right-content .right-content-buttonCreate .create {
+    background-color: #3698fb;
+    height: 40px;
+    width: 250px;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 699px) {
+  body {
+    background-color: #eff6ff;
+  }
+  body .main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body .main .left .bg {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  body .main .left .logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+  }
+  body .main .right {
+    width: 759px;
+    height: 1400px;
+    background-color: white;
+  }
+  body .main .right .right-content {
+    margin: 100px 70px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 60px;
+  }
+  body .main .right .right-content .right-content-firstText {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  body .main .right .right-content .right-content-firstText h1 {
+    font-size: 27px;
+  }
+  body .main .right .right-content .right-content-firstText p {
+    font-size: 18px;
+    color: #7b8a92;
+  }
+  body .main .right .right-content .right-content-registration {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  body .main .right .right-content .right-content-registration .btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  body .main .right .right-content .right-content-registration .btns .fb {
+    background-color: #255a9b;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+  }
+  body .main .right .right-content .right-content-registration .btns .fb .facebook {
+    width: 8%;
+    height: auto;
+    margin: auto;
+  }
+  body .main .right .right-content .right-content-registration .btns .lk {
+    background-color: #0076b6;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+  }
+  body .main .right .right-content .right-content-registration .btns .lk .linkedin {
+    width: 8%;
+    height: auto;
+    margin: auto;
+  }
+  body .main .right .right-content .right-content-registration .btns .R {
+    margin: auto;
+    color: #ffffff;
+  }
+  body .main .right .right-content .right-content-registration .hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main .right .right-content .right-content-registration .forms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  body .main .right .right-content .right-content-registration .forms .email {
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid #5d9bfb;
+    border-radius: 5px;
+  }
+  body .main .right .right-content .right-content-registration .forms .number {
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid #5d9bfb;
+    border-radius: 5px;
+  }
+  body .main .right .right-content .right-content-secondText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  body .main .right .right-content .right-content-secondText h2 {
+    font-size: 22px;
+  }
+  body .main .right .right-content .right-content-secondText p {
+    font-size: 15px;
+    color: #7b8a92;
+  }
+  body .main .right .right-content .right-content-radios {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+  body .main .right .right-content .right-content-radios .radio {
+    display: block;
+    cursor: pointer;
+  }
+  body .main .right .right-content .right-content-radios .radio input {
+    display: none;
+  }
+  body .main .right .right-content .right-content-radios .radio input + span {
+    line-height: 22px;
+    height: 22px;
+    padding-left: 22px;
+    display: block;
+    position: relative;
+  }
+  body .main .right .right-content .right-content-radios .radio input + span:not(:empty) {
+    padding-left: 30px;
+  }
+  body .main .right .right-content .right-content-radios .radio input + span:before, body .main .right .right-content .right-content-radios .radio input + span:after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  body .main .right .right-content .right-content-radios .radio input + span:before {
+    background: #d1d7e3;
+    transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+  }
+  body .main .right .right-content .right-content-radios .radio input + span:after {
+    background: #fff;
+    transform: scale(0.78);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+  }
+  body .main .right .right-content .right-content-radios .radio input:checked + span:before {
+    transform: scale(1.04);
+    background: #5d9bfb;
+  }
+  body .main .right .right-content .right-content-radios .radio input:checked + span:after {
+    transform: scale(0.4);
+    transition: transform 0.3s ease;
+  }
+  body .main .right .right-content .right-content-radios .radio:hover input + span:before {
+    transform: scale(0.92);
+  }
+  body .main .right .right-content .right-content-radios .radio:hover input + span:after {
+    transform: scale(0.74);
+  }
+  body .main .right .right-content .right-content-radios .radio:hover input:checked + span:after {
+    transform: scale(0.4);
+  }
+  body .main .right .right-content .right-content-checkbox span {
+    color: #7b8a92;
+  }
+  body .main .right .right-content .right-content-checkbox a {
+    color: #3698fb;
+  }
+  body .main .right .right-content .right-content-buttonCreate .create {
+    background-color: #3698fb;
+    height: 40px;
+    width: 250px;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

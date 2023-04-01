@@ -6,6 +6,9 @@
 }
 $valueOfWidth: 250px;
 $valueOfHeight: 40px;
+body {
+  height: 100vh;
+}
 @media screen and (min-width: 700px) {
   body {
     background-color: #eff6ff;
@@ -257,7 +260,7 @@ $valueOfHeight: 40px;
         }
       }
       .right {
-        width: 759px;
+        width: 100vw;
         height: 1500px;
         background-color: white;
         .right-content {

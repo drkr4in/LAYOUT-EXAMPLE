@@ -5,6 +5,10 @@
   color: #2a4a5c;
 }
 
+body {
+  height: 100vh;
+}
+
 @media screen and (min-width: 700px) {
   body {
     background-color: #eff6ff;
@@ -228,7 +232,7 @@
     height: 150px;
   }
   body .main .right {
-    width: 759px;
+    width: 100vw;
     height: 1500px;
     background-color: white;
   }
@@ -408,6 +412,4 @@
     border-radius: 5px;
     font-size: 18px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

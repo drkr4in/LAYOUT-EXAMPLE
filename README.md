@@ -2,8 +2,6 @@
 
 ![Template](/template.jpg)
 
-Если верстку не знаете совсем - можете приступить к изучению с нуля.
-
 ### Рекомендумые редакторы кода
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [WebStorm](https://www.jetbrains.com/webstorm/)

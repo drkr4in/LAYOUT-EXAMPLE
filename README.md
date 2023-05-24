@@ -29,8 +29,3 @@
 - ![#AFAFAF](https://placehold.it/15/AFAFAF/000000?text=+) `#AFAFAF`
 - ![#EEEEEE](https://placehold.it/15/EEEEEE/000000?text=+) `#EEEEEE`
 - ![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) `#FFFFFF`
-
-### Результат
-Предоставить в виде 2 ссылок
-1) Github репозиторий - [Как выложить свой проект на GitHub](https://maxsite.org/page/how-to-put-your-project-on-github-com)
-2) Github Pages - [как настроить](https://developer.mozilla.org/ru/docs/Learn/Common_questions/Using_Github_pages)
